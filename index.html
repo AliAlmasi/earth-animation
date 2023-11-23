@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Earth Animation</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			*,
+			*::before,
+			*::after {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				user-select: none;
+				font-family: "JetBrains Mono", monospace !important;
+				font-weight: 600;
+				color: #77ff00;
+				cursor: default;
+			}
+
+			html {
+				font-size: 62.5%;
+			}
+
+			body {
+				height: 100vh;
+				width: 100vw;
+				background-color: #183333;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				font-size: 1.4rem;
+			}
+
+			pre {
+				height: 70%;
+				width: 70%;
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			footer {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 0.4rem;
+			}
+
+			a:link,
+			a:visited {
+				text-decoration: none;
+				color: green;
+			}
+
+			a:hover,
+			a:active,
+			a:focus {
+				color: #77ff00;
+			}
+		</style>
+	</head>
+	<body>
+		<pre id="text"></pre>
+		<footer>
+			<a href="https://github.al1almasi.ir"
+				>&NestedLessLess; Ali Almasi &NestedGreaterGreater;</a
+			>
+			<a href="https://github.com/alialmasi/earth-animation"
+				>&NestedLessLess; GitHub repo &NestedGreaterGreater;</a
+			>
+		</footer>
+		<script src="./index.js"></script>
+	</body>
+</html>
