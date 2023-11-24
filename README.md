@@ -2,10 +2,10 @@
 
 Simple Earth Animation done with Promises (`fetch()` API) in JS
 
-[**Live preview**](https://al1almasi.ir/earth-animation)
+## [Live preview](https://al1almasi.ir/earth-animation)
 
 <a href="https://al1almasi.ir/earth-animation">
-<pre>
+<pre align='center'>
                        .-/+ooooososso+/:.                       
                  `:oy@N@hysd@@d@++::+o+h@Nyoo:`                 
               :oys/+N@@@@@d@@@Nso``+d@oo:.-..:oss:              
@@ -37,3 +37,9 @@ oy                                   -@@@@@@@@@@@@@@y++-``````oy
                       `-:+osyshhhhhyoo+/-`                      
 </pre>
 </a>
+
+---
+
+[![pages-build-deployment](https://github.com/AliAlmasi/earth-animation/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/AliAlmasi/earth-animation/actions/workflows/pages/pages-build-deployment)
+
+[Copyright 2020 The JetBrains Mono Project Authors](https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt) (https://github.com/JetBrains/JetBrainsMono)
