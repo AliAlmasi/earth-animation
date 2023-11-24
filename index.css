@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	font-family: "JetBrains Mono", monospace !important;
+	font-weight: 600;
+	color: #77ff00;
+	cursor: default;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	height: 100svh;
+	width: 100svw;
+	background-color: #183333;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.4rem;
+	overflow: hidden;
+}
+
+pre {
+	height: 70svh;
+	width: 70svw;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: green;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #77ff00;
+}
+
+/* ----- RESPONSIVE MEDIA QUERIES ----- */
+
+@media (max-height: 47.5em) {
+	body {
+		justify-content: space-around;
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 52.5em) {
+	pre {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 34.375em) {
+	pre {
+		font-size: 1rem;
+	}
+	footer {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 25.9375em) {
+	pre {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 19.375em) {
+	pre {
+		font-size: 0.6rem;
+	}
+	footer {
+		font-size: 1rem;
+	}
+}
