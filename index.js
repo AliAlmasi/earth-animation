@@ -1,29 +1,17 @@
 "use strict";
 
-let allTextLines = [];
-let index;
-
-const preEl = document.querySelector("#text");
-
-async function sleep(ms) {
-	return new Promise((resolve) => setTimeout(resolve, ms));
-}
+const preEl = document.getElementById("text");
 
 fetch("./earth-anim.txt")
-	.then((res) => {
-		return res.text();
-	})
-	.then((data) => {
-		allTextLines = data.split("|");
-	})
-	.then(async () => {
-		for (index = 0; index < allTextLines.length; index++) {
-			if (index === allTextLines.length - 1) {
-				index = -1;
-			} else {
-				preEl.textContent = allTextLines[index];
-				console.log(`preEl.textContent = allTextLines[${index}]`);
-				await sleep(50);
-			}
-		}
+	.then((response) => response.text())
+	.then((text) => {
+		console.log("Text file loaded");
+		const frames = text.split("|");
+		const length = frames.length;
+		let count = 0;
+		setInterval(() => {
+			preEl.textContent = frames[count % length];
+			console.log(`preEl.textContent = frames[${count % length}]`);
+			count++;
+		}, 60);
 	});

@@ -4,6 +4,8 @@ Simple Earth Animation done with Promises (`fetch()` API) in JS
 
 ## [Live preview](https://al1almasi.ir/earth-animation)
 
+> Note: to run this locally, you need to use a web server on your computer (like `live-server` - because of the `fetch()` API)
+
 <a href="https://al1almasi.ir/earth-animation">
 <pre align='center'>
                        .-/+ooooososso+/:.                       
